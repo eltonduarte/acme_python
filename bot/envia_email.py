@@ -8,10 +8,6 @@ def email_conclusao(destino):
     # criar um email
     email = outlook.CreateItem(0)
 
-    faturamento = 1500
-    qtde_produtos = 10
-    ticket_medio = faturamento / qtde_produtos
-
     # configurar as informações do seu e-mail
     email.To = destino
     email.Subject = "E-mail automático do Python"
